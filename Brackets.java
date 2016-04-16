@@ -10,8 +10,7 @@ public class Brackets {
 	
 	public void proof(){
 		System.out.println("Please enter a bracket-combination: ");
-		bracket = input.next();
-		String[] s1 = bracket.split("");
+		String[] s1 = (input.next()).split("");
 		
 		for(int i = 0; i<s1.length; i++){
 			if((s1.length%2)!=0){
@@ -41,6 +40,8 @@ public class Brackets {
 			System.out.println("Invalid String");
 		}
 	}
+	
+	
 	
 	
 	public static void main(String[] args) {
